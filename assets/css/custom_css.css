@@ -1,0 +1,34 @@
+body {
+  background-color: #CFD8DC;
+  color: #212121;
+  text-align: justify;
+}
+
+.header {
+  text-align: center;
+}
+
+.main-content {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.main-jumbotron {
+  //background-color: #37474F;
+  color: #fff;
+  background-image: url("/assets/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+hr {
+  width: 500px;
+}
+
+footer {
+  text-align: center;
+  color: grey;
+  font-family: calibri;
+  padding-top: 50px;
+  font-size: 16px;
+}
