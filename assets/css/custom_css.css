@@ -1,34 +1,134 @@
+/*-------------------------------*/
+/*           VARIABLES           */
+/*-------------------------------*/
+
+// BACKGROUND COLOR
+@bg-color: #583e7e;
+
+// TEXT COLOR
+@text-color: #fff;
+
+// SIDEBAR LINK COLOR VARIABLES
+@side-color-1: #1a1a1a;
+@side-color-2: darken(@side-color-3, 5%);
+@side-color-3: darken(@side-color-4, 5%);
+@side-color-4: @bg-color;
+@side-color-5: lighten(@side-color-4, 5%);
+@side-color-6: lighten(@side-color-5, 5%);
+@side-color-7: lighten(@side-color-6, 5%);
+@side-color-8: lighten(@side-color-7, 5%);
+@side-color-9: lighten(@side-color-8, 5%);
+
+// HAMBURGER COLOR
+@hamburger-color-closed: fadeout(@text-color, 30);
+@hamburger-color-open: @text-color;
+
+// WIDTH VARIABLES
+@width1: 220px;
+@width2: 100px;
+@full-width: 100%;
+
+// HEIGHT VARIABLES
+@full-height: 100%;
+
+
 body {
-  background-color: #CFD8DC;
-  color: #212121;
-  text-align: justify;
+    //background-color: #CFD8DC;
+    //color: #212121;
+    color: #000;
+    text-align: justify;
+    position: relative;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: @full-height;
+    background-color: @bg-color;
 }
 
 .header {
-  text-align: center;
+    text-align: center;
 }
 
 .main-content {
-  padding-left: 100px;
-  padding-right: 100px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
-.main-jumbotron {
-  //background-color: #37474F;
-  color: #fff;
-  background-image: url("../images/bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+.jumbotron {
+    margin-bottom: 0px;
+    position: relative;
+    background: none;
+    color: #fff;
+    text-align: center;
+}
+
+.jumbotron .header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("http://ruhaatish.com/wp-content/uploads/nameless_faceless_acrylic_palette_knife_painting_abstract_depression_contemporary_art_by_ishrath_humairah.jpg");
+    background-position: 0% 25%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/*.header-content:before {
+content: "";
+z-index: -1;
+
+display: block;
+background-image: url("https://i.pinimg.com/736x/1b/66/3c/1b663c7275487712743354513fa76fd9--depression-bipolar-to-swallow.jpg");
+background-size: 100% 100%;
+background-repeat: repeat-x;
+
+-webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+filter: blur(5px);
+}*/
+
+.header-content {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+    z-index: 9999 !important;
 }
 
 hr {
-  width: 500px;
+    width: 500px;
 }
 
 footer {
-  text-align: center;
-  color: grey;
-  font-family: calibri;
-  padding-top: 50px;
-  font-size: 16px;
+    text-align: center;
+    color: grey;
+    font-family: calibri;
+    padding-top: 50px;
+    font-size: 16px;
+}
+
+/* Side navbar CSS */
+.nav {
+  .open>a {
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+    &:focus {
+      background-color: transparent;
+    }
+  }
 }
