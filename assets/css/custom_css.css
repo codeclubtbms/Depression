@@ -14,7 +14,8 @@ body {
     padding-bottom: 20px;
     padding-left: 100px;
     padding-right: 100px;
-    background-color: rgba(204, 162, 29, 0.23);
+    //background-color: rgba(204, 162, 29, 0.23);
+    background-color: rgba(144, 164, 174, 0.33);
 }
 
 .jumbotron {
@@ -82,4 +83,28 @@ footer {
     font-family: calibri;
     padding-top: 50px;
     font-size: 18px;
+}
+
+a, a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.thumbnail img, p {
+  padding: 5px;
+}
+
+.thumbnail img {
+  height: 150px;
+}
+
+.thumbnail {
+  border: 1px solid #CFD8DC;
+  border-radius: 0.1em;
+  padding: 5px;
+  background-color: #CFD8DC;
+}
+
+.thumbnail:hover {
+  background-color: #B0BEC5;
 }
